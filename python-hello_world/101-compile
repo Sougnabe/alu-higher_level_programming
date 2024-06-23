@@ -1,0 +1,8 @@
+#!/bin/bash
+python3 -m py_compil "$PYFILE"
+{$PYFILE}c
+compiled_file="${PYFILE}c"
+mv "__pycache__/$
+{PYFILE%.py}.cpython-*.pyc"
+"$compiled_file"
+rmdir "__pycache__"
