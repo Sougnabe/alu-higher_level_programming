@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def islower(c):
     # Vérifie si le caractère c est en minuscule
     if ord(c) >= ord('a') and ord(c) <= ord('z'):
