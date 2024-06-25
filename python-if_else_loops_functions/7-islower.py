@@ -5,7 +5,7 @@ def islower(c):
         return True
     else:
         return False
-if _name_ == "_main_":
+if __name__ == "__main__":
     print("a is {}".format("lower" if islower("a") else "upper"))
     print("H is {}".format("lower" if islower("H") else "upper"))
     print("A is {}".format("lower" if islower("A") else "upper"))
