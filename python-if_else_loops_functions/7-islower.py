@@ -1,9 +1,9 @@
-#!/usr/bin/python3
 def islower(c):
-    if ord(c) >= ord(a) and ord(c) <= ord(z)
-    return true
-else:
-    return false
+    # Vérifie si le caractère c est en minuscule
+    if ord(c) >= ord('a') and ord(c) <= ord('z'):
+        return True
+    else:
+        return False
 if _name_ == "_main_":
     print("a is {}".format("lower" if islower("a") else "upper"))
     print("H is {}".format("lower" if islower("H") else "upper"))
