@@ -10,7 +10,7 @@ if __name__ == "__main__":
         print("1 argument:")
         print("1: {}".format(values[1]))
     elif length > 2:
-        print("{:d} arguments:".format(number-1))
-        while i < number:
+        print("{:d} arguments:".format(length-1))
+        while i < length:
             print("{:d}: {}".format((i), values[i]))
             i = i + 1
