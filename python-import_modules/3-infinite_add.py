@@ -3,7 +3,7 @@ if __name__ == "__main__":
     import sys
 
     char = sys.argv
-    leng = len(values)
+    leng = len(char)
     i = 1
     summ = 0
     if leng == 1:
