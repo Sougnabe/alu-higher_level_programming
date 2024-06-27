@@ -1,12 +1,2 @@
 #!/bin/bash
-if [ -z "$PYFILE" ]; then
-	echo "The PYFILE environement variable is not set."
-	exit 1
-fi
-python3 -m py_compile "$PYFILE"
-{$PYFILE}c
-compiled_file="${PYFILE}c"
-mv "__pycache__/$
-{PYFILE%.py}.cpython-*.pyc"
-"$compiled_file"
-rmdir "__pycache__"
+python3 -c "import py_compile; py_compile.compile('$PYFILE', '$PYFILE' + 'c')"
