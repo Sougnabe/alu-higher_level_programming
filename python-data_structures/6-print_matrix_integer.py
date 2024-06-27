@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    for chin in matrix:
+    for record in matrix:
         counter = 0
         for i in record:
-            if counter == (len(chin) - 1):
+            if counter == (len(record) - 1):
                 print("{:d}".format(i), end="")
             else:
                 print("{:d}".format(i), end=" ")
