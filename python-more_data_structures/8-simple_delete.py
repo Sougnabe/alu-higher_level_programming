@@ -4,5 +4,4 @@ def simple_delete(a_dictionary, key=""):
         del a_dictionary[key]
         return a_dictionary
     else:
-        print("this key don't exist")
         return a_dictionary
