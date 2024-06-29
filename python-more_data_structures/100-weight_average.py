@@ -8,9 +8,10 @@ def weight_average(my_list=[]):
 
     return numerator / denominator if denominator != 0 else 0
 
-# Test the function
-result = weight_average([(10, 2), (20, 1), (30, 3)])  # Example: should return the numeric value
-print("Av: {:0.2f}".format(result))  # Format the result to two decimal places
-
-result = weight_average([])  # Example: should return 0
-print("Av: {:0.2f}".format(result))  # Format the result to two decimal places
+# Test cases
+print("Av: {:0.2f}".format(weight_average([(1, 1), (2, 1), (3, 1), (4, 1), (5, 1)])))  # Expected: Av: 3.00
+print("Av: {:0.2f}".format(weight_average([(1, 1), (2, 2)])))  # Expected: Av: 1.67
+print("Av: {:0.2f}".format(weight_average([(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)])))  # Expected: Av: 3.67
+print("Av: {:0.2f}".format(weight_average([(1, 10), (10, 1)])))  # Expected: Av: 1.82
+print("Av: {:0.2f}".format(weight_average([(1, 2)])))  # Expected: Av: 1.00
+print("Av: {:0.2f}".format(weight_average([])))  # Expected: Av: 0.00
