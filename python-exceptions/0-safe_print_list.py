@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-def safe_print_list(my_list=[], x=0):
+def safe_print_list(my_list=[], x):
     try:
-        print("class[x:d]")
+        print("my_list[x:d]")
     except TypeError:
-        print("class[x:s]")
+        print("my_list[x:s]")
     except TypeError:
-        print("class[x:f]")
+        print("my_list[x:f]")
 
