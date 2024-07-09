@@ -25,7 +25,7 @@ This class doesn't have modules
         give the erea of teh current square
         """
         return self.__size**2
-    @proprety
+    @property
     def size(self):
         """
         the size getter
