@@ -22,13 +22,13 @@ class Square():
 
     def area(self):
         return self.__size**2
-@proprety
+    @proprety
     def size(self):
         """
         the size getter
         """
         return self.__size
-@size.setter
+    @size.setter
     def size(self, value):
         """
         the size setter
