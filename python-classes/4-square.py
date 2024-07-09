@@ -25,12 +25,14 @@ class Square():
         give the erea of teh current square
         """
         return self.__size**2
+
     @property
     def size(self):
         """
         the size getter
         """
         return self.__size
+
     @size.setter
     def size(self, value):     
         """
