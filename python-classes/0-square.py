@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-class Square:
+"""the following class is empty"""
+class Square():
     """This don't have module"""
