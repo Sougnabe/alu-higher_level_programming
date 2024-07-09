@@ -21,6 +21,9 @@ class Square():
             self.__size = size
 
     def area(self):
+        """
+        give the erea of teh current square
+        """
         return self.__size**2
     @proprety
     def size(self):
