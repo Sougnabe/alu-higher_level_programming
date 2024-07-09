@@ -31,11 +31,18 @@ This class doesn't have modules
         the size getter
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         """
-        the size setter
+        the setter
         """
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
         self.__size = value
 
     def my_print(self):
