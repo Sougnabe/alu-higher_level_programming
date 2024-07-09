@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 class Square:
-    pass
+    def __init__(self, length=0, width=0)
