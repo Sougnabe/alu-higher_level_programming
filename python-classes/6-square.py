@@ -9,7 +9,7 @@ class Square():
     """
 This class doesn't have modules
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Now the class has a module
         """ 
