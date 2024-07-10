@@ -4,4 +4,5 @@ class Rectangle():
     """
     a rectangle has four sides
     """
-    pass
+    def __init__(self):
+        pass
