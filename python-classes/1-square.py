@@ -1,38 +1,12 @@
 #!/usr/bin/python3
-"""Defines a rectangle class"""
+"""
+DOCUMENTATION FOR MODULES IN HERE WILL DO THE TRICK
+"""
 
 
-class Rectangle:
-    """Represents a rectangle with his characteristics"""
-
-    def __init__(self, width=0, height=0):
-        self.width = width
-        self.height = height
-
-    @property
-    def width(self):
-        """Retrieve the width of the rectangle"""
-        return self.__width
-
-    @width.setter
-    def width(self, value):
-        """Set the width of the rectangle"""
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = value
-
-    @property
-    def height(self):
-        """Retrieve the height of the rectangle"""
-        return self.__height
-
-    @height.setter
-    def height(self, value):
-        """Set the height of the rectangle"""
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value < 0:
-            raise ValueError("height must be >= 0")
-        self.__height = value
+class Square:
+    """
+    CLASS CREATES A PRIVATE SIZE INSTANCE VARIABLE AND ASSIGNS IT
+    """
+    def __init__(self, size):
+        self._Square__size = size
