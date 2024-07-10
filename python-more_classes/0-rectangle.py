@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-class Rectangle:
+class Rectangle():
     """
     a rectangle has four sides
     """
+    pass
