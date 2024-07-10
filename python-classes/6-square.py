@@ -46,12 +46,6 @@ This class doesn't have modules
             self.__size = value
         self.__size = value
 
-    def my_print(self):
-        if self.__size == 0:
-            print("")
-        else:
-            for _ in range(self.__size):
-                print("#" * self.__size)
     @property
     def position(self):
         """
@@ -73,6 +67,20 @@ This class doesn't have modules
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
+
+    def my_print(self):
+        """
+        Prints in stdout the square with the character #
+        If size is equal to 0, prints an empty line
+
+        """
+        if self.__size == 0:
+            print("")
+        else:
+            for _ in range(self.__position[1]):
+                print("")
+            for _ in range(self.__size):
+                print(" " * self.__position[0] + "#" * self.__size)
 
 if __name__ == "__main__":
     Square = __import__("6-square").Square
