@@ -6,6 +6,10 @@ class Rectangle:
     """Represents a rectangle with his characteristics"""
 
     def __init__(self, width=0, height=0):
+        """
+        init methide 
+        """
+        
         self.width = width
         self.height = height
 
