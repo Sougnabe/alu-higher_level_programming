@@ -70,3 +70,6 @@ True
 [0, 0, 0]
 
 >>> l.print_sorted(44, 33)
+Traceback (most recent call last):
+...
+TypeError: print_sorted() takes 1 positional argument but 3 were given
