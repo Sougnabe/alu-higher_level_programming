@@ -1,17 +1,31 @@
 #!/usr/bin/python3
-"""This module defines a class named Square that is inherited"""
+"""
+This module contains a Square class that inherits from Rectangle
+"""
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """This is a class named Square that is inherited"""
-
+    """
+    A class used to represent a square, inheriting from Rectangle
+    """
     def __init__(self, size):
-        """This method is the public instantation method"""
+        """
+        Initializes a new square instance
+        """
         self.integer_validator("size", size)
-        super().__init__(size, size)
         self.__size = size
+        super().__init__(size, size)
+
+    def area(self):
+        """
+        Computes the area of the square
+        """
+        return self.__size * self.__size
 
     def __str__(self):
-        """This method returns the string represenattion of a square"""
+        """
+        Returns a string representation of the square
+        """
         return "[Square] {}/{}".format(self.__size, self.__size)
