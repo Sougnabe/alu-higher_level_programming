@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """adds all arguments to a Python list, and save in file"""
 
+import os
+import sys
+
+
 from 5-save_to_json_file.py import save_to_json_fil
 from 6-load_from_json_file.py import load_from_json_file
-import sys
-import os
 
 
 filename = "add_item.json"
