@@ -3,6 +3,9 @@
 
 class student:
     '''goood'''
+    first_name = None
+    last_name = None
+    age = None
 
     def __init__(self, first_name, last_name, age):
         '''goood'''
