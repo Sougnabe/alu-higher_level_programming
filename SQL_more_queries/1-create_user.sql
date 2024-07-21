@@ -1,8 +1,3 @@
--- Create user if not exists
+-- This script creates a server based on a user
 CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
-
--- Grant all privileges on the server
-GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
-
--- Flush privileges to ensure all changes take effect
-FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
