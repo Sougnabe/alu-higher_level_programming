@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""goood url importation """
+"""It's a working module"""
 
 
 import urllib.request
