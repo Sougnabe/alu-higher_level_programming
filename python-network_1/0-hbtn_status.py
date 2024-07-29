@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""url module imported"""
 import urllib.request
 
 url = 'https://alu-intranet.hbtn.io/status'
