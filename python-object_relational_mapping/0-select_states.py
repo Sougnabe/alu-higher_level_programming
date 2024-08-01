@@ -1,28 +1,33 @@
 #!/usr/bin/python3
-"""
-    Create a script that lists all states from a database hbtn_0e_0_usa
-"""
+"""This module defines a function that establishes a connection to a SQL server"""
 
-import sys
 import MySQLdb
+import sys
+
+
+def sql_connect(usr, pw, db_name):
+    """This function imports a database to use"""
+
+    """Establish connection"""
+    db = MySQLdb.connect(host="localhost",
+                         user=usr,
+                         port=3306,
+                         passwd=pw,
+                         database=db_name)
+
+    """Create cursor object"""
+    cur = db.cursor()
+    cur.execute("SELECT * FROM states;")
+
+    """Access the queried data to print"""
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+
+    """Close the connection and cursor object"""
+    cur.close()
+    db.close()
 
 
 if __name__ == "__main__":
-    db_conn = MySQLdb.connect(
-        user=sys.argv[1],
-        passwd=sys.argv[2],
-        db=sys.argv[3],
-        host='localhost',
-        port=3306
-    )
-
-    cur = db_conn.cursor()
-
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
-    states = cur.fetchall()
-
-    for state in states:
-        print(state)
-
-    cur.close()
-    db_conn.close()
+    sql_connect(sys.argv[1], sys.argv[2], sys.argv[3])
