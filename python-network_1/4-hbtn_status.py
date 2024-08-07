@@ -1,13 +1,19 @@
 #!/usr/bin/python3
 """
-A Python script that fetches https://alu-intranet.hbtn.io/status.
+A Python script that fetches a status from a specified URL.
 """
 
 import requests
 
 def fetch_status(url):
     """
-documented
+    Fetches the status from a given URL and prints the response details.
+    
+    Args:
+        url (str): The URL to fetch the status from.
+    
+    Returns:
+        None
     """
     response = requests.get(url)
     content = response.text.strip()
@@ -16,5 +22,7 @@ documented
     print("\t- content: {}".format(content))
 
 if __name__ == '__main__':
-    fetch_status('http://0.0.0.0:5050/status')
-    fetch_status('https://intranet.hbtn.io/status')
+    # Uncomment the URL you want to fetch
+    # url = 'https://intranet.hbtn.io/status'
+    url = 'http://0.0.0.0:5050/status'
+    fetch_status(url)
