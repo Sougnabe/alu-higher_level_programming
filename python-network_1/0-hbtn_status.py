@@ -3,10 +3,13 @@
 - Write a Python script that fetches https://alu-intranet.hbtn.io/status
 - using the urllib package.
 """
+
+
 import urllib.request
 '''
 documented
 '''
+
 
 url = 'https://intranet.hbtn.io/status'
 if url.startswith('https://'):
