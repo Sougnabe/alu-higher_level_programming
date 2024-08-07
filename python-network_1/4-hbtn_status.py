@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A Python script that fetches a status from a specified URL.
+documented
 """
 
 import requests
