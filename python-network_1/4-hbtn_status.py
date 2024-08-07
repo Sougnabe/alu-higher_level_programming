@@ -28,6 +28,4 @@ if __name__ == '__main__':
     ]
     
     for url in urls:
-        print(f"Fetching status from: {url}")
         fetch_status(url)
-        print()
