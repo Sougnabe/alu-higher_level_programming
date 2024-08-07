@@ -17,3 +17,4 @@ documented
 
 if __name__ == '__main__':
     fetch_status('http://0.0.0.0:5050/status')
+    fetch_status('https://intranet.hbtn.io/status')
