@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-Write a Python script that
-fetches https://intranet.hbtn.io/status.
+A Python script that fetches https://intranet.hbtn.io/status.
 """
 
 import urllib.request
-"""documented"""
 
-if __name__ == '__main__':
-    url = 'https://intranet.hbtn.io/status'
+def fetch_status(url):
+    """
+documented
+    """
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -17,7 +17,7 @@ if __name__ == '__main__':
         'Upgrade-Insecure-Requests': '1'
     }
     req = urllib.request.Request(url, headers=headers)
-    
+
     try:
         with urllib.request.urlopen(req) as response:
             content = response.read()
@@ -29,4 +29,7 @@ if __name__ == '__main__':
         print(f"HTTP Error: {e.code}")
     except urllib.error.URLError as e:
         print(f"URL Error: {e.reason}")
+
+if __name__ == '__main__':
+    fetch_status('https://intranet.hbtn.io/status')
 
