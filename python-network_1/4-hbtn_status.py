@@ -22,7 +22,7 @@ def fetch_status(url):
     print("\t- content: {}".format(content))
 
 if __name__ == '__main__':
-    # Uncomment the URL you want to fetch
-    # url = 'https://intranet.hbtn.io/status'
-    url = 'http://0.0.0.0:5050/status'
-    fetch_status(url)
+    urls = [
+        'https://intranet.hbtn.io/status',
+        'http://0.0.0.0:5050/status'
+    ]
