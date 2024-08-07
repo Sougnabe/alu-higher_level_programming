@@ -10,7 +10,7 @@ def fetch_status(url):
 documented
     """
     response = requests.get(url)
-    content = response.text
+    content = response.text.strip()
     print("Body response:")
     print("\t- type: {}".format(type(content)))
     print("\t- content: {}".format(content))
