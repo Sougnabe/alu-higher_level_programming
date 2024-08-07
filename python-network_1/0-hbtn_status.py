@@ -5,6 +5,7 @@ fetches https://intranet.hbtn.io/status.
 """
 
 import urllib.request
+"""documented"""
 
 if __name__ == '__main__':
     url = 'https://intranet.hbtn.io/status'
