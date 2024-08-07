@@ -1,13 +1,17 @@
 #!/usr/bin/python3
-"""__summary__
-- Write a Python script that
-- fetches https://intranet.hbtn.io/status.
+"""
+Write a Python script that
+fetches https://intranet.hbtn.io/status.
 """
 
 import urllib.request
-"""documented"""
+
 if __name__ == '__main__':
-    with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
+    url = 'https://intranet.hbtn.io/status'
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    req = urllib.request.Request(url, headers=headers)
+    
+    with urllib.request.urlopen(req) as response:
         content = response.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
