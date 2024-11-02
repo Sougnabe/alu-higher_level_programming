@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+richard = "l'homme"
+print(f"{richard:=^30}")
